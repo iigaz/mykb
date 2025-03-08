@@ -1,0 +1,3 @@
+    <key c="shift" nw="loc esc" ne="selectAll" se="paste" sw="pasteAsPlainText" w="cursor_left" e="cursor_right" n="up" s="down" slider="true"/>
+    <key c="backspace" w="backspace" e="delete" sw="undo" se="redo" nw="cut" ne="copy" slider="true"/>
+    <key c="switch_numeric" w="switch_forward" e="switch_forward" nw="switch_emoji" ne="loc switch_clipboard" s="config" n="loc voice_typing" />

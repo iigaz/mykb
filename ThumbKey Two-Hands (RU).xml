@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<keyboard bottom_row="false" name="ThumbKey Two-Hands (RU)" script="cyrillic">
+  <row>
+    <key c="с" s="э" se="й" e="щ" nw="~" n="\@" ne="|" sw="…" w="\#" anticircle="7"/>
+    <key c="р" s="х" w="*" e="-" nw="№" n="^" ne="%" anticircle="8"/>
+    <key c="а" sw="ж" s="+" nw="`" n="₽" ne="&amp;" e="$" anticircle="9"/>
+    <key c="shift" nw="loc esc" ne="selectAll" se="paste" sw="pasteAsPlainText" w="cursor_left" e="cursor_right" n="up" s="down" slider="true"/>
+    <key c="с" s="э" se="й" e="щ" nw="~" n="\@" ne="|" sw="…" w="\#" anticircle="7"/>
+    <key c="р" s="х" w="*" e="-" nw="№" n="^" ne="%" anticircle="8"/>
+    <key c="а" sw="ж" s="+" nw="`" n="₽" ne="&amp;" e="$" anticircle="9"/>
+  </row>
+  <row>
+    <key c="н" s="л" e="м" nw="{" sw="[" w="(" anticircle="4"/>
+    <key c="в" nw="я" n="ы" ne="ь" w="к" e="п" sw="г" s="з" se="у" anticircle="5"/>
+    <key c="е" w="ф" ne="}" se="]" e=")" s="\?" anticircle="6"/>
+    <key c="backspace" w="backspace" e="delete" sw="undo" se="redo" nw="cut" ne="copy" slider="true"/>
+    <key c="н" s="л" e="м" nw="{" sw="[" w="(" anticircle="4"/>
+    <key c="в" nw="я" n="ы" ne="ь" w="к" e="п" sw="г" s="з" se="у" anticircle="5"/>
+    <key c="е" w="ф" ne="}" se="]" e=")" s="\?" anticircle="6"/>
+  </row>
+  <row>
+    <key c="т" n="ш" ne="ч" e="ъ" s="_" sw="\\" se="=" nw="&lt;" anticircle="1"/>
+    <key c="и" e="ц" n="б" nw="'" ne="&quot;" sw=":" se="," s="." anticircle="2"/>
+    <key c="о" nw="д" e="ё" s="ю" sw=";" se="/" ne="&gt;" n="!" anticircle="3"/>
+    <key c="switch_numeric" w="switch_forward" e="switch_forward" nw="switch_emoji" ne="loc switch_clipboard" s="config" n="loc voice_typing" />
+    <key c="т" n="ш" ne="ч" e="ъ" s="_" sw="\\" se="=" nw="&lt;" anticircle="1"/>
+    <key c="и" e="ц" n="б" nw="'" ne="&quot;" sw=":" se="," s="." anticircle="2"/>
+    <key c="о" nw="д" e="ё" s="ю" sw=";" se="/" ne="&gt;" n="!" anticircle="3"/>
+  </row>
+  <row>
+    <key c="enter" ne="action"/>
+    <key c="compose" n="fn" e="alt" anticircle="0"/>
+    <key width="3" c="space" n="change_method" ne="ctrl" nw="ctrl" w="tab" e="tab"/>
+    <key c="compose" n="fn" w="alt" anticircle="0"/>
+    <key c="enter" nw="action"/>
+  </row>
+</keyboard>

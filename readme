@@ -1,0 +1,21 @@
+Unexpected Keyboard ThumbKey Inspired Two Hands Layouts
+=======================================================
+
+This repository stores some layouts for Unexpected Keyboard:
+https://github.com/Julow/Unexpected-Keyboard.
+
+These layouts were inspired by thumb-key:
+https://github.com/dessalines/thumb-key, adjusted to suit my needs.
+
+-------------------------------------------------------
+
+It also includes a script to generate two-hands layouts from nine
+keys.
+
+Write your 9-key Unexpected Keyboard layout to some file, say
+"thumbkey.xml". Change "bottom.xml" (bottom row) and "middle.xml"
+(middle column) as you see fit.
+
+Then, do:
+$ ./script.sed thumbkey.xml
+to get your two-hands layout.
