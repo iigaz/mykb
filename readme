@@ -7,6 +7,8 @@ https://github.com/Julow/Unexpected-Keyboard.
 These layouts were inspired by thumb-key:
 https://github.com/dessalines/thumb-key, adjusted to suit my needs.
 
+"QWERTY (US).xml" is just the default UnK layout with no offsets.
+
 -------------------------------------------------------
 
 It also includes a script to generate two-hands layouts from nine
@@ -19,3 +21,4 @@ Write your 9-key Unexpected Keyboard layout to some file, say
 Then, do:
 $ ./script.sed thumbkey.xml
 to get your two-hands layout.
+
