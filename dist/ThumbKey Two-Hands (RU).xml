@@ -28,10 +28,10 @@
     <key c="о" nw="д" e="ё" s="ю" sw=";" se="/" ne="&gt;" anticircle="3"/>
   </row>
   <row>
-    <key c="enter" ne="action"/>
+    <key c="enter" ne="action" nw="tab"/>
     <key c="compose" n="fn" e="alt" anticircle="0"/>
-    <key width="3" c="space" n="change_method" ne="ctrl" nw="ctrl" w="tab" e="tab"/>
+    <key width="3" c="space" n="change_method" ne="ctrl" nw="ctrl" w="left" e="right"/>
     <key c="compose" n="fn" w="alt" anticircle="0"/>
-    <key c="enter" nw="action"/>
+    <key c="enter" nw="action" ne="tab"/>
   </row>
 </keyboard>
