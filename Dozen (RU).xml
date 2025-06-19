@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
++ - - - + - - - + - - - + - - - +
+| 1 2 3 | 4 5 6 | 7 8 9 | 0 - + |
+| ё к / | % е < | > н = | * р щ |
+|   ц   |   у   |   г   |   з   |
++ - - - + - - - + - - - + - - - +
+|   й   |   @   |   ш   |   х   |
+| ф в ' | ( а   |   о ) | " л № |
+| ~ ы   |   п   |   ж   |   э ` |
++ - - - + - - - + - - - + - - - +
+|   я   |   м   |   ь   |   б   |
+| $ с ч | # и ; | : т ъ | ю д ₽ |
+|   !   |   ,   |   .   |   ?   |
++ - - - + - - - + - - - + - - - +
+
+nw  n ne
+ w  c  e
+sw  s se
+-->
+
+<keyboard bottom_row="false" name="Dozen (RU)" script="cyrillic" locale_extra_keys="false">
+  <row>
+    <key c="shift" nw="loc esc" ne="selectAll" se="paste" sw="pasteAsPlainText" w="cursor_left" e="cursor_right" n="up" s="down" slider="true"/>
+    <key c="к" s="ц" w="ё" e="/" nw="1" n="2" ne="3"/>
+    <key c="е" s="у" w="%" e="&lt;" nw="4" n="5" ne="6"/>
+    <key c="н" s="г" w="&gt;" e="=" nw="7" n="8" ne="9"/>
+    <key c="р" s="з" w="*" e="щ" nw="0" n="-" ne="+"/>
+    <key c="shift" nw="loc esc" ne="selectAll" se="paste" sw="pasteAsPlainText" w="cursor_left" e="cursor_right" n="up" s="down" slider="true"/>
+  </row>
+  <row>
+    <key c="backspace" w="backspace" e="delete" sw="undo" se="redo" nw="cut" ne="copy" slider="true"/>
+    <key c="в" n="й" s="ы" w="ф" e="'" sw="~"/>
+    <key c="а" n="@" s="п" w="("/>
+    <key c="о" n="ш" s="ж" e=")"/>
+    <key c="л" n="х" s="э" w="&quot;" e="№" se="`"/>
+    <key c="backspace" w="backspace" e="delete" sw="undo" se="redo" nw="cut" ne="copy" slider="true"/>
+  </row>
+  <row>
+    <key c="switch_numeric" w="switch_forward" e="switch_forward" nw="switch_emoji" ne="loc switch_clipboard" s="config" n="loc voice_typing" />
+    <key c="с" n="я" w="$" e="ч" s="!"/>
+    <key c="и" n="м" w="#" e=";" s=","/>
+    <key c="т" n="ь" w=":" e="ъ" s="."/>
+    <key c="д" n="б" w="ю" e="₽" s="?"/>
+    <key c="switch_numeric" w="switch_forward" e="switch_forward" nw="switch_emoji" ne="loc switch_clipboard" s="config" n="loc voice_typing" />
+  </row>
+  <row>
+    <key c="enter" ne="action" nw="tab"/>
+    <key c="compose" n="fn" e="alt" anticircle="0"/>
+    <key width="2" c="space" n="change_method" s="_" ne="ctrl" nw="ctrl" w="left" e="right"/>
+    <key c="compose" n="fn" w="alt" anticircle="0"/>
+    <key c="enter" nw="action" ne="tab"/>
+  </row>
+</keyboard>
