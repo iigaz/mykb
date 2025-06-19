@@ -21,34 +21,34 @@ sw  s se
 
 <keyboard bottom_row="false" name="Dozen (EN)" script="latin" locale_extra_keys="false">
   <row>
-    <key c="shift" nw="loc esc" ne="selectAll" se="paste" sw="pasteAsPlainText" w="cursor_left" e="cursor_right" n="up" s="down" slider="true"/>
+    <key c="delete" e="forward_delete_word" s="paste" n="cut" w="loc esc"/>
     <key c="e" s="w" w="{" e="/" nw="1" n="2" ne="3"/>
     <key c="t" s="y" w="%" e="&lt;" nw="4" n="5" ne="6"/>
     <key c="r" s="y" w="&gt;" e="=" nw="7" n="8" ne="9"/>
     <key c="i" s="u" w="*" e="}" nw="0" n="-" ne="+"/>
-    <key c="shift" nw="loc esc" ne="selectAll" se="paste" sw="pasteAsPlainText" w="cursor_left" e="cursor_right" n="up" s="down" slider="true"/>
+    <key c="backspace" w="delete_word" s="paste" n="cut" e="loc esc"/>
   </row>
   <row>
-    <key c="backspace" w="backspace" e="delete" sw="undo" se="redo" nw="cut" ne="copy" slider="true"/>
+    <key c="shift" n="up" s="down" w="undo" e="redo" ne="selectAll" se="loc tab"/>
     <key c="a" n="q" s="x" w="[" e="'" sw="~"/>
-    <key c="s" n="@" s="f" w="("/>
+    <key c="s" n="\@" s="f" w="("/>
     <key c="h" n="j" s="g" e=")"/>
     <key c="o" n="k" s="p" w="&quot;" e="]" se="`"/>
-    <key c="backspace" w="backspace" e="delete" sw="undo" se="redo" nw="cut" ne="copy" slider="true"/>
+    <key c="shift" n="up" s="down" w="undo" e="redo" nw="selectAll" sw="loc tab"/>
   </row>
   <row>
-    <key c="switch_numeric" w="switch_forward" e="switch_forward" nw="switch_emoji" ne="loc switch_clipboard" s="config" n="loc voice_typing" />
+    <key c="ctrl" n="alt" s="fn" e="compose" ne="copy" se="loc meta"/>
     <key c="c" n="z" w="$" e="|" s="!"/>
-    <key c="d" n="v" w="#" e=";" s=","/>
+    <key c="d" n="v" w="\#" e=";" s=","/>
     <key c="n" n="b" w=":" e="^" s="."/>
-    <key c="l" n="m" w="\" e="&amp;" s="?"/>
-    <key c="switch_numeric" w="switch_forward" e="switch_forward" nw="switch_emoji" ne="loc switch_clipboard" s="config" n="loc voice_typing" />
+    <key c="l" n="m" w="\\" e="&amp;" s="\?"/>
+    <key c="ctrl" n="alt" s="fn" w="compose" nw="copy" sw="loc meta"/>
   </row>
   <row>
-    <key c="enter" ne="action" nw="tab"/>
-    <key c="compose" n="fn" e="alt" anticircle="0"/>
-    <key width="2" c="space" n="change_method" s="_" ne="ctrl" nw="ctrl" w="left" e="right"/>
-    <key c="compose" n="fn" w="alt" anticircle="0"/>
-    <key c="enter" nw="action" ne="tab"/>
+    <key c="enter" s="\n" n="action"/>
+    <key c="switch_numeric" w="cursor_left" e="cursor_right" n="loc voice_typing" s="config" nw="switch_emoji" ne="switch_clipboard" slider="true"/>
+    <key width="2" c="space" n="change_method" s="_" w="switch_forward" e="switch_forward"/> <!-- switch_backward does not work for some reason -->
+    <key c="switch_numeric" w="cursor_left" e="cursor_right" n="loc voice_typing" s="config" nw="switch_clipboard" ne="switch_emoji" slider="true"/>
+    <key c="enter" s="\n" n="action"/>
   </row>
 </keyboard>
