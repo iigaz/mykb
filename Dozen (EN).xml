@@ -2,7 +2,7 @@
 <!--
 + - - - + - - - + - - - + - - - +
 | 1 2 3 | 4 5 6 | 7 8 9 | 0 - + |
-| { e / | % t < | > r = | * i } |
+| { e / | % r < | > t = | * i } |
 |   w   |   y   |   y   |   u   |
 + - - - + - - - + - - - + - - - +
 |   q   |   @   |   j   |   k   |
@@ -23,8 +23,8 @@ sw  s se
   <row>
     <key c="delete" e="forward_delete_word" s="paste" n="cut" w="loc esc"/>
     <key c="e" s="w" w="{" e="/" nw="1" n="2" ne="3"/>
-    <key c="t" s="y" w="%" e="&lt;" nw="4" n="5" ne="6"/>
-    <key c="r" s="y" w="&gt;" e="=" nw="7" n="8" ne="9"/>
+    <key c="r" s="y" w="%" e="&lt;" nw="4" n="5" ne="6"/>
+    <key c="t" s="y" w="&gt;" e="=" nw="7" n="8" ne="9"/>
     <key c="i" s="u" w="*" e="}" nw="0" n="-" ne="+"/>
     <key c="backspace" w="delete_word" s="paste" n="cut" e="loc esc"/>
   </row>
