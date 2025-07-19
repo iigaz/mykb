@@ -6,8 +6,8 @@
 |   w   |   t   |   y   |   u   |
 + - - - + - - - + - - - + - - - +
 |   q   |   @   |   j   |   k   |
-| [ a ' | ( s   |   h ) | " o ] |
-| ~ x   |   f   |   g   |   p ` |
+| [ a ~ | ( s ' | " h ) | ` o ] |
+|   x   |   f   |   g   |   p   |
 + - - - + - - - + - - - + - - - +
 |   z   |   v   |   b   |   m   |
 | $ c | | # d ; | : n ^ | \ l & |
@@ -21,34 +21,39 @@ sw  s se
 
 <keyboard bottom_row="false" name="Dozen (EN)" script="latin" locale_extra_keys="false">
   <row>
-    <key c="delete" e="forward_delete_word" s="paste" n="cut" w="loc esc"/>
+    <key c="backspace" n="delete" e="loc forward_delete_word" s="cut"/>
+    <key width="4" c="space" n="change_method" s="_" w="switch_forward" e="switch_forward"/> <!-- switch_backward does not work for some reason -->
+    <key c="backspace" n="delete" w="loc delete_word" s="cut"/>
+  </row>
+  <row>
+    <key c="shift" e="fn" s="selectAll" n="compose" ne="loc esc"/>
     <key c="e" s="w" w="{" e="/" nw="1" n="2" ne="3"/>
     <key c="r" s="t" w="%" e="&lt;" nw="4" n="5" ne="6"/>
     <key c="t" s="y" w="&gt;" e="=" nw="7" n="8" ne="9"/>
     <key c="i" s="u" w="*" e="}" nw="0" n="-" ne="+"/>
-    <key c="backspace" w="delete_word" s="paste" n="cut" e="loc esc"/>
+    <key c="shift" w="fn" s="selectAll" n="compose" nw="loc esc"/>
   </row>
   <row>
-    <key c="shift" n="up" s="down" w="undo" e="redo" ne="selectAll" se="loc tab"/>
-    <key c="a" n="q" s="x" w="[" e="'" sw="~"/>
-    <key c="s" n="\@" s="f" w="("/>
-    <key c="h" n="j" s="g" e=")"/>
-    <key c="o" n="k" s="p" w="&quot;" e="]" se="`"/>
-    <key c="shift" n="up" s="down" w="undo" e="redo" nw="selectAll" sw="loc tab"/>
+    <key c="enter" n="loc voice_typing" s="\n" e="loc tab"/>
+    <key c="a" n="q" s="x" w="[" e="~"/>
+    <key c="s" n="\@" s="f" w="(" e="'"/>
+    <key c="h" n="j" s="g" e=")" w="&quot;"/>
+    <key c="o" n="k" s="p" e="]" w="`"/>
+    <key c="enter" n="loc voice_typing" s="\n" w="loc tab"/>
   </row>
   <row>
-    <key c="ctrl" n="alt" s="fn" e="compose" ne="copy" se="loc meta"/>
+    <key c="paste" n="copy" s="switch_clipboard" e="ctrl"/>
     <key c="c" n="z" w="$" e="|" s="!"/>
     <key c="d" n="v" w="\#" e=";" s=","/>
     <key c="n" n="b" w=":" e="^" s="."/>
     <key c="l" n="m" w="\\" e="&amp;" s="\?"/>
-    <key c="ctrl" n="alt" s="fn" w="compose" nw="copy" sw="loc meta"/>
+    <key c="paste" n="copy" s="switch_clipboard" w="ctrl"/>
   </row>
   <row>
-    <key c="enter" s="\n" n="action"/>
-    <key c="switch_numeric" w="cursor_left" e="cursor_right" n="loc voice_typing" s="config" nw="switch_emoji" ne="switch_clipboard" slider="true"/>
-    <key width="2" c="space" n="change_method" s="_" w="switch_forward" e="switch_forward"/> <!-- switch_backward does not work for some reason -->
-    <key c="switch_numeric" w="cursor_left" e="cursor_right" n="loc voice_typing" s="config" nw="switch_clipboard" ne="switch_emoji" slider="true"/>
-    <key c="enter" s="\n" n="action"/>
+    <key c="switch_numeric" e="config" n="switch_emoji"/>
+    <key c="undo" n="redo" e="loc alt" w="loc meta"/>
+    <key width="2" c="space" s="cursor_down" n="cursor_up" w="cursor_left" e="cursor_right" slider="true"/>
+    <key c="undo" n="redo" w="loc alt" e="loc meta"/>
+    <key c="switch_numeric" w="config" n="switch_emoji"/>
   </row>
 </keyboard>
