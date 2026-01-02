@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
 + - - - + - - - + - - - + - - - +
-| 1 2 3 | 4 5 6 | 7 8 9 | 0 - + |
-| { e / | % r < | > t = | * i } |
+|   @   |   #   |   ^   |   *   |
+| { e } | | r % | ` t _ | ( i ) |
 |   w   |   t   |   y   |   u   |
 + - - - + - - - + - - - + - - - +
-|   q   |   @   |   j   |   k   |
-| [ a ~ | ( s ' | " h ) | ` o ] |
+|   q   |   -   |   j   |   k   |
+| $ a & | = s + | : h ; | ' o " |
 |   x   |   f   |   g   |   p   |
 + - - - + - - - + - - - + - - - +
 |   z   |   v   |   b   |   m   |
-| $ c | | # d ; | : n ^ | \ l & |
-|   !   |   ,   |   .   |   ?   |
+| [ c ] |   d ~ | \ n / | < l > |
+|   !   |   .   |   ,   |   ?   |
 + - - - + - - - + - - - + - - - +
 
 nw  n ne
@@ -22,37 +22,37 @@ sw  s se
 <keyboard bottom_row="false" name="Dozen (EN)" script="latin" locale_extra_keys="false">
   <row>
     <key c="backspace" n="delete" e="loc forward_delete_word" s="cut"/>
-    <key width="4" c="space" n="change_method" s="_" w="switch_forward" e="switch_forward"/> <!-- switch_backward does not work for some reason -->
+    <key width="4" c="space" s="cursor_down" n="cursor_up" w="cursor_left" e="cursor_right" slider="true"/> <!-- switch_backward does not work for some reason -->
     <key c="backspace" n="delete" w="loc delete_word" s="cut"/>
   </row>
   <row>
     <key c="shift" e="fn" s="selectAll" n="compose" ne="loc esc"/>
-    <key c="e" s="w" w="{" e="/" nw="1" n="2" ne="3"/>
-    <key c="r" s="t" w="%" e="&lt;" nw="4" n="5" ne="6"/>
-    <key c="t" s="y" w="&gt;" e="=" nw="7" n="8" ne="9"/>
-    <key c="i" s="u" w="*" e="}" nw="0" n="-" ne="+"/>
+    <key c="e" n="\@" s="w" w="{" e="}" anticircle="0"/>
+    <key c="r" n="#" s="t" w="|" e="%" anticircle="7"/>
+    <key c="t" n="^" s="y" w="`" e="_" anticircle="8"/>
+    <key c="i" n="*" s="u" w="(" e=")" anticircle="9"/>
     <key c="shift" w="fn" s="selectAll" n="compose" nw="loc esc"/>
   </row>
   <row>
     <key c="enter" n="loc voice_typing" s="\n" e="loc tab"/>
-    <key c="a" n="q" s="x" w="[" e="~"/>
-    <key c="s" n="\@" s="f" w="(" e="'"/>
-    <key c="h" n="j" s="g" e=")" w="&quot;"/>
-    <key c="o" n="k" s="p" e="]" w="`"/>
+    <key c="a" n="q" s="x" w="$" e="&amp;" anticircle="0"/>
+    <key c="s" n="-" s="f" w="=" e="+" anticircle="4"/>
+    <key c="h" n="j" s="g" e=":" w=";" anticircle="5"/>
+    <key c="o" n="k" s="p" e="'" w="&quot;" anticircle="6"/>
     <key c="enter" n="loc voice_typing" s="\n" w="loc tab"/>
   </row>
   <row>
     <key c="paste" n="copy" s="switch_clipboard" e="ctrl"/>
-    <key c="c" n="z" w="$" e="|" s="!"/>
-    <key c="d" n="v" w="\#" e=";" s=","/>
-    <key c="n" n="b" w=":" e="^" s="."/>
-    <key c="l" n="m" w="\\" e="&amp;" s="\?"/>
+    <key c="c" n="z" s="!" w="[" e="]" anticircle="0"/>
+    <key c="d" n="v" s="." e="~" anticircle="1"/>
+    <key c="n" n="b" s="," w="\\" e="/" anticircle="2"/>
+    <key c="l" n="m" s="\?" w="&lt;" e="&gt;" anticircle="3"/>
     <key c="paste" n="copy" s="switch_clipboard" w="ctrl"/>
   </row>
   <row>
     <key c="switch_numeric" e="config" n="switch_emoji"/>
     <key c="undo" n="redo" e="loc alt" w="loc meta"/>
-    <key width="2" c="space" s="cursor_down" n="cursor_up" w="cursor_left" e="cursor_right" slider="true"/>
+    <key width="2" c="space" n="change_method" w="switch_forward" e="switch_forward" />
     <key c="undo" n="redo" w="loc alt" e="loc meta"/>
     <key c="switch_numeric" w="config" n="switch_emoji"/>
   </row>

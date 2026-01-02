@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
 + - - - + - - - + - - - + - - - +
-| 1 2 3 | 4 5 6 | 7 8 9 | 0 - + |
-| / к ё | % е < | > н = | щ р * |
+|   @   |   №   |   ^   |   *   |
+| $ к ₽ | ё е % | ` н щ | ( р ) |
 |   ц   |   у   |   г   |   з   |
 + - - - + - - - + - - - + - - - +
-|   й   |   @   |   ш   |   х   |
-| ₽ в ф | ( а ' | " о ) | ` л № |
+|   й   |   -   |   ш   |   х   |
+| # в ф | = а + | : о ; | ю л " |
 |   ы   |   п   |   ж   |   э   |
 + - - - + - - - + - - - + - - - +
 |   я   |   м   |   ь   |   б   |
-| $ с ч | # и ; | : т ъ | ю д \ |
-|   !   |   ,   |   .   |   ?   |
+| [ с ] | ч и ~ | / т ъ | < д > |
+|   !   |   .   |   ,   |   ?   |
 + - - - + - - - + - - - + - - - +
 
 nw  n ne
@@ -22,37 +22,37 @@ sw  s se
 <keyboard bottom_row="false" name="Dozen (RU)" script="cyrillic" locale_extra_keys="false">
   <row>
     <key c="backspace" n="delete" e="loc forward_delete_word" s="cut"/>
-    <key width="4" c="space" n="change_method" s="_" w="switch_forward" e="switch_forward"/> <!-- switch_backward does not work for some reason -->
+    <key width="4" c="space" s="cursor_down" n="cursor_up" w="cursor_left" e="cursor_right" slider="true"/> <!-- switch_backward does not work for some reason -->
     <key c="backspace" n="delete" w="loc delete_word" s="cut"/>
   </row>
   <row>
     <key c="shift" e="fn" s="selectAll" n="compose" ne="loc esc"/>
-    <key c="к" s="ц" w="/" e="ё" nw="1" n="2" ne="3"/>
-    <key c="е" s="у" w="%" e="&lt;" nw="4" n="5" ne="6"/>
-    <key c="н" s="г" w="&gt;" e="=" nw="7" n="8" ne="9"/>
-    <key c="р" s="з" w="щ" e="*" nw="0" n="-" ne="+"/>
+    <key c="к" n="\@" s="ц" w="$" e="₽" anticircle="0"/>
+    <key c="е" n="№" s="у" w="ё" e="%" anticircle="7"/>
+    <key c="н" n="^" s="г" w="`" e="щ" anticircle="8"/>
+    <key c="р" n="*" s="з" w="(" e=")" anticircle="9"/>
     <key c="shift" w="fn" s="selectAll" n="compose" nw="loc esc"/>
   </row>
   <row>
     <key c="enter" n="loc voice_typing" s="\n" e="loc tab"/>
-    <key c="в" n="й" s="ы" e="ф" w="₽"/>
-    <key c="а" n="\@" s="п" w="(" e="'"/>
-    <key c="о" n="ш" s="ж" e=")" w="&quot;"/>
-    <key c="л" n="х" s="э" e="№" w="`"/>
+    <key c="в" n="й" s="ы" w="#" e="ф" anticircle="0"/>
+    <key c="а" n="-" s="п" w="=" e="+" anticircle="4"/>
+    <key c="о" n="ш" s="ж" w=":" e=";" anticircle="5"/>
+    <key c="л" n="х" s="э" w="ю" e="&quot;" anticircle="6"/>
     <key c="enter" n="loc voice_typing" s="\n" w="loc tab"/>
   </row>
   <row>
     <key c="paste" n="copy" s="switch_clipboard" e="ctrl"/>
-    <key c="с" n="я" w="$" e="ч" s="!"/>
-    <key c="и" n="м" w="\#" e=";" s=","/>
-    <key c="т" n="ь" w=":" e="ъ" s="."/>
-    <key c="д" n="б" w="ю" e="\\" s="\?"/>
+    <key c="с" n="я" s="!" w="[" e="]" anticircle="0"/>
+    <key c="и" n="м" s="." w="ч" e="~" anticircle="1"/>
+    <key c="т" n="ь" s="," w="/" e="ъ" anticircle="2"/>
+    <key c="д" n="б" s="\?" w="&lt;" e="&gt;" anticircle="3"/>
     <key c="paste" n="copy" s="switch_clipboard" w="ctrl"/>
   </row>
   <row>
     <key c="switch_numeric" e="config" n="switch_emoji"/>
     <key c="undo" n="redo" e="loc alt" w="loc meta"/>
-    <key width="2" c="space" s="cursor_down" n="cursor_up" w="cursor_left" e="cursor_right" slider="true"/>
+    <key width="2" c="space" n="change_method" w="switch_forward" e="switch_forward" />
     <key c="undo" n="redo" w="loc alt" e="loc meta"/>
     <key c="switch_numeric" w="config" n="switch_emoji"/>
   </row>
